@@ -1,5 +1,5 @@
-n=int(input()) #9
-sq=n*n #81
+n=int(input()) 
+sq=n*n 
 s=0
 while sq>0:
     r=sq%10 
