@@ -1,14 +1,12 @@
-x=int(input())
-y=int(input())
-s1=0
-s2=0
-for i in range(1,x):
-    if x%i==0:
-        s1+=i
-for i in range(1,y):
-    if y%i==0:
-        s2+=i
-if s1==y and s2==x:
-    print("Amicable")
+def amicable(n):
+    s=0
+    for i in range(1,n):
+        if n%i==0:
+            s+=i
+    return s
+a=int(input())
+b=int(input())
+if amicable(a)==b and amicable(b)==a:
+    print('Amicable')
 else:
     print("Not Amicable")
